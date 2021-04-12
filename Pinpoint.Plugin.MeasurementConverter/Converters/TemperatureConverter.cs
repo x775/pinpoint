@@ -51,5 +51,7 @@ namespace Pinpoint.Plugin.MeasurementConverter.Converters
         {
             return fromKelvin[(TemperaturUnit)toUnit](toKelvin[(TemperaturUnit)fromUnit](amount));
         }
+
+        public Type Unit { get; } = typeof(TemperaturUnit);
     }
 }

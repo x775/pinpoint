@@ -53,5 +53,7 @@ namespace Pinpoint.Plugin.MetaConverter.Converters
         {
             return fromCentimeters[(MetricUnit)toUnit](toCentimeters[(MetricUnit)fromUnit](amount));
         }
+
+        public Type Unit { get; } = typeof(MetricUnit);
     }
 }

@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Pinpoint.Core;
 using Pinpoint.Core.Results;
-using Pinpoint.Plugin.MetaConverter.Converters
+using Pinpoint.Plugin.MetaConverter.Converters;
 
 namespace Pinpoint.Plugin.MetaConverter
 {
@@ -13,6 +13,10 @@ namespace Pinpoint.Plugin.MetaConverter
         // Match left- and right-hand side of any conversion.
         private static readonly Regex Pattern = new Regex(@"^(\d+) ?(\w*){1}( (to|in) )?(\w*)?");
         private static Match _match;
+
+        var types = typeof(MetaConverterPlugin).Assembly.GetTypes();
+        private static Type[] typeCandidates = types.Where(t => t.IsClass && t.GetInterface(nameof(IConverter)) != null).ToArray();
+
 
         public PluginMeta Meta { get; set; } = new PluginMeta("Meta Converter", PluginPriority.Highest);
         public PluginSettings UserSettings { get; set; } = new PluginSettings();

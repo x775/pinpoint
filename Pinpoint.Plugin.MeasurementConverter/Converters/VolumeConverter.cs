@@ -100,5 +100,6 @@ namespace Pinpoint.Plugin.MeasurementConverter.Converters
         {
             return fromCubicMeter[(VolumeUnit)toUnit](toCubicMeter[(VolumeUnit)fromUnit](amount));
         }
+        public Type Unit { get; } = typeof(VolumeUnit);
     }
 }

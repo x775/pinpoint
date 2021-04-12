@@ -7,5 +7,6 @@ namespace Pinpoint.Core
     public interface IConverter
     {
         double Convert(Enum fromUnit, Enum toUnit, double amount);
+        Type Unit { get; }
     }
 }

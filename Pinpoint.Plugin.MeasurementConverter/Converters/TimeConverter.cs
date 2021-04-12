@@ -70,5 +70,6 @@ namespace Pinpoint.Plugin.MeasurementConverter.Converters
         {
             return fromSeconds[(TimeUnit)toUnit](toSeconds[(TimeUnit)fromUnit](amount));
         }
+        public Type Unit { get; } = typeof(TimeUnit);
     }
 }
