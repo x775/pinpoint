@@ -22,8 +22,10 @@ namespace Pinpoint.Plugin.MeasurementConverter.Converters
         public enum TemperaturUnit
         {
             k = 1,
+            kel = 1, 
             kelvin = 1,
             c = 2,
+            cel = 2,
             celsius = 2,
             f = 3,
             fahrenheit = 3,
