@@ -1,7 +1,7 @@
 ﻿using FontAwesome5;
 using Pinpoint.Core.Results;
 
-namespace Pinpoint.Plugin.MeasurementConverter
+namespace Pinpoint.Plugin.MetaConverter
 {
     public class ConversionResult : CopyabableQueryOption
     {

@@ -15,7 +15,6 @@ namespace Pinpoint.Plugin.MetaConverter
         private static readonly Regex Pattern = new Regex(@"^(\d+) ?(\w*){1}( (to|in) )?(\w*)?");
         private static Match _match;
         
-
         public PluginMeta Meta { get; set; } = new PluginMeta("Meta Converter", PluginPriority.Highest);
         public PluginSettings UserSettings { get; set; } = new PluginSettings();
         public bool TryLoad() => true;
