@@ -25,6 +25,7 @@ using Pinpoint.Plugin.Dictionary;
 using Pinpoint.Plugin.EncodeDecode;
 using Pinpoint.Plugin.Finance;
 using Pinpoint.Plugin.HackerNews;
+using PinPoint.Plugin.MetaConverter;
 using Pinpoint.Plugin.Notes;
 using Pinpoint.Plugin.PasswordGenerator;
 using Pinpoint.Plugin.Reddit;
@@ -81,7 +82,7 @@ namespace Pinpoint.Win.View
             _pluginEngine.AddPlugin(new AppSearchPlugin());
             _pluginEngine.AddPlugin(new ControlPanelPlugin());
             _pluginEngine.AddPlugin(new CalculatorPlugin());
-            //_pluginEngine.AddPlugin(new CurrencyPlugin());
+            _pluginEngine.AddPlugin(new CurrencyPlugin());
             _pluginEngine.AddPlugin(new BangsPlugin());
             _pluginEngine.AddPlugin(new DictionaryPlugin());
             _pluginEngine.AddPlugin(new CommandLinePlugin());
@@ -96,6 +97,7 @@ namespace Pinpoint.Win.View
             _pluginEngine.AddPlugin(new ColorConverterPlugin());
             _pluginEngine.AddPlugin(new UrlLauncherPlugin());
             _pluginEngine.AddPlugin(new PasswordGeneratorPlugin());
+            _pluginEngine.AddPlugin(new MetaConvereterPlugin());
         }
 
         internal MainWindowModel Model
