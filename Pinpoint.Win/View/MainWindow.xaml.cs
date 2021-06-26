@@ -25,7 +25,7 @@ using Pinpoint.Plugin.Dictionary;
 using Pinpoint.Plugin.EncodeDecode;
 using Pinpoint.Plugin.Finance;
 using Pinpoint.Plugin.HackerNews;
-using PinPoint.Plugin.MetaConverter;
+using Pinpoint.Plugin.MetaConverter;
 using Pinpoint.Plugin.Notes;
 using Pinpoint.Plugin.PasswordGenerator;
 using Pinpoint.Plugin.Reddit;
